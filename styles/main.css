@@ -1,16 +1,31 @@
+.caja {
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+.borde {
+    border: 1px solid grey;
+    width: 80%;
+    margin: auto;
+    -webkit-box-shadow: -1px -1px 13px 6px rgba(0,0,0,0.56);
+    -moz-box-shadow: -1px -1px 13px 6px rgba(0,0,0,0.56);
+    box-shadow: -1px -1px 13px 6px rgba(0,0,0,0.56);
+}
 .coming-soon {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 48px;
     text-align: center;
     text-transform: capitalize;
-    margin: 60px 0;
+    margin: 32px 0 20px;
 }
 .logo {
     width: 370px;
     margin:auto;
 }
 .personaje {
-    width: 320px;
+    width: 385px;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -25,7 +40,7 @@
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-    margin: auto;
+    margin: 24px auto 47px;
   }
   
   @-webkit-keyframes spin {
@@ -36,4 +51,25 @@
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+  }
+
+  .redes-sociales {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    color: #000;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .redes-sociales a {
+      text-decoration: none;
+      color: #000;
+  }
+
+  .redes-sociales a:hover, .redes-sociales a:focus, .redes-sociales a:active {
+      text-decoration: none;
+      color: #1d99a0;
   }
